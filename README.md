@@ -121,6 +121,6 @@ MP-Mips can execute instructions below:
               .. ...
               .. ...
               
-              In there memory cell's content is 01040301.That's is an 32 bit register's content, data memory cell's 
+              In there memory cell's content is 01040301.That's is can be a 32 bit register's content, data memory cell's 
               content or instruction memory cell's content.In there 01 is most significant 8 bits and 02 is least 
               significant 8 bits.Concatenation like that (Line_4 - Line_3 - Line_2 - Line_1) in code.
