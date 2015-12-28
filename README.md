@@ -1,8 +1,8 @@
-# H1 MP-MIPS
+# MP-MIPS
 
 MP-Mips is a 32-bit processor which was developed with multicycle design techniques in Verilog-HDL was developed by Mutlu Polatcan.
 
-## H2 MP-MIPS Details
+## MP-MIPS Details
 
 Data memory size: 2kb											                                
 Data memory each block size: 1 byte							                     	
@@ -14,12 +14,12 @@ Number of registers: 32 registers
 
 MP-Mips can execute instructions below:
 
-## H2 MP-MIPS INSTRUCTIONS 
+## MP-MIPS INSTRUCTIONS 
 
-### H3 I-Type Instructions:
+### I-Type Instructions:
 
 | OPCODE	|   NAME	 |                      OPERATION                         |
-|---------|:--------:|:-------------------------------------------------------|
+|:-------:|:--------:|:-------------------------------------------------------|
 | 001000	|  ADDI    |   $rt <-- $rs + imm32 (signed)                         |
 | 001001	|  ADDIU   |   $rt <-- $rs + imm32 (unsigned)                       |
 | 001101	|  ORI     |   $rt <-- $rs | imm32                                  |
@@ -32,7 +32,7 @@ MP-Mips can execute instructions below:
 Bonus Instructions added to I-Type Instructions:
 
 | OPCODE	|   NAME	 |                      OPERATION                         |
-|---------|:--------:|:-------------------------------------------------------|
+|:-------:|:--------:|:-------------------------------------------------------|
 | 010111  |  SUBI    |   $rt <-- $rs - imm32 (signed)                         |
 | 011100	|  SUBIU 	 |   $rt <-- $rs - imm32 (unsigned)                       |
 | 100001	|  NORI 	 |   $rt <-- ~($rs | imm32)                               |
@@ -40,10 +40,10 @@ Bonus Instructions added to I-Type Instructions:
 | 011101	|  NANDI 	 |   $rt <-- ~($rs & imm32)                               |
 
 
-### H3 R-Type Instructions:
+### R-Type Instructions:
 
 | FUNC. FIELD |	  NAME   |	                      OPERATION                       |
-|-------------|:--------:|:-------------------------------------------------------|
+|:-----------:|:--------:|:-------------------------------------------------------|
 |   100000    |   ADD    |  $rd <-- $rs + $rt (signed)                            |
 |   100010	  |	  SUB 	 |  $rd <-- $rs - $rt (signed)                            |
 |   100100	  |	  AND    |  $rd <-- $rs & $rt                                     |
@@ -58,7 +58,7 @@ Bonus Instructions added to I-Type Instructions:
 Bonus Instructions added:
 
 | FUNC. FIELD |	  NAME   |	                      OPERATION                       |
-|-------------|:--------:|:-------------------------------------------------------|
+|:-----------:|:--------:|:-------------------------------------------------------|
 |   100001		|  ADDU 	 |  $rd <-- $rs + $rt (unsigned)                          |
 |   101111 		|  SUBU    |  $rd <-- $rs - $rt (unsigned)                          |
 |   100111		|  NOR     |  $rd <-- ~($rs | $rt)                                  |
@@ -66,19 +66,19 @@ Bonus Instructions added:
 |   101110	  |  NAND    |  $rd <-- ~($rs & $rt)                                  |
 
 
-### H3 Memory Instructions:
+### Memory Instructions:
 
 | OPCODE |	 NAME 	|               OPERATION                |
-|--------|:--------:|:---------------------------------------|
+|:------:|:--------:|:---------------------------------------|
 | 100011 |   LW  	  |   $rt <-- MEM[$rs + imm32]             |
 | 100000 |	 LB 		|   $rt <-- MEM[$rs + imm32]             |
 | 101011 |	 SW 		|   MEM[$rs + imm32] <-- $rt             |
 | 101000 |	 SB 		|   MEM[$rs + imm32] <-- $rt             |
 
-### H3 Jump Instructions:
+### Jump Instructions:
 
 | OPCODE | 	 NAME	  |                           OPERATION                           |
-|--------|:--------:|:--------------------------------------------------------------|
+|:------:|:--------:|:--------------------------------------------------------------|
 | 000010 |		J 		|   PC <-- PC[31:28] | instruction[25:0] << 2                   |
 | 000011 |	 	JAL	  |   $31 <-- PC + 4, PC <-- PC [31:28] | instruction[25:0] << 2  |
 | 000000 |		JR    |   PC <-- $rs                                                  |
