@@ -103,12 +103,14 @@ MP-Mips can execute instructions below:
 * Then click again **Simulate** menu and click **Run** option then select **run -all** option.
 
 **NOTE**: If you want to change data memory,registers or instructions memory you need to edit **register.h**, 
-          **data_memory.h** and **instruction_memory.h** files:
+          **data_memory.h** and **instruction_memory.h** files.
           In these files all lines are **2 bits** in **hexadecimal** (**8 bits** in **binary**).
           One register, data cell or instruction cell consists of sequentially **4 rows**.Because register contents,
           memory cells and instruction memory cells consist 32 bit content.
           
+          
           Proof --> 4 line x 2 bits in hexadecimal = 4 line x 8 bits in binary = 32 bit memory cell content
+          
           For example register.h file like that:
           
           
@@ -118,6 +120,7 @@ MP-Mips can execute instructions below:
               4  01
               .. ...
               .. ...
-              In there memory cell's content is 01040301.That's is an 32 bit register's content, data memory cell's content or
-              instruction memory cell's content.In there 01 is most significant 8 bits and 02 is least significant 8  
-              bits.Concatenation like that (Line_4 - Line_3 - Line_2 - Line_1) in code.
+              
+              In there memory cell's content is 01040301.That's is an 32 bit register's content, data memory cell's 
+              content or instruction memory cell's content.In there 01 is most significant 8 bits and 02 is least 
+              significant 8 bits.Concatenation like that (Line_4 - Line_3 - Line_2 - Line_1) in code.
