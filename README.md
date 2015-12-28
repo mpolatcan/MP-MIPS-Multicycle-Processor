@@ -105,7 +105,7 @@ MP-Mips can execute instructions below:
 **NOTE**: If you want to change data memory,registers or instructions memory you need to edit **register.h**, 
           **data_memory.h** and **instruction_memory.h** files.
           In these files all lines are **2 bits** in **hexadecimal** (**8 bits** in **binary**).
-          One register, data cell or instruction cell consists of sequentially **4 rows**.Because register content,
+          One register, data memory cell or instruction memory cell consists of sequentially **4 rows**.Because register content,
           memory cell's content and instruction memory cell's content consist of 32 bit content.
           
           
