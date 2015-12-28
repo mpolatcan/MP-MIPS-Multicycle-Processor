@@ -92,12 +92,12 @@ MP-Mips can execute instructions below:
 | 000000 |		JR    |   PC <-- $rs                                                  |
 
 ## Usage
-* Copy files to same folder. (for example folder name is MP-MIPS)
-* Open ModelSim-ALTERA and click File menu and click Change Directory option.
-* Select our directory (in our example MP-MIPS)
-* Click Compile menu and click Compile option.
-* In pop-up menu double-click mp_mips_multicyle_testbench.v to compile it.
+* Copy files to same folder. (for example folder name is **MP-MIPS**)
+* Open **ModelSim-ALTERA** and click **File** menu and click **Change Directory** option.
+* Select our directory (in our example **MP-MIPS**)
+* Click **Compile** menu and click **Compile** option.
+* In pop-up menu double-click **mp_mips_multicyle_testbench.v** to compile it.
 * Click yes for question which is "The library work doesn't exist.Do you want to create this library ?"
-* Then click Simulate menu and click Start Simulation option.
-* In pop-up menu find work libray and select mpolatcan_mips_multicycle_testbench under the work library.
-* Then click again Simulate menu and click Run option then select run -all option.
+* Then click **Simulate** menu and click **Start Simulation** option.
+* In pop-up menu find work libray and select **mpolatcan_mips_multicycle_testbench** under the work library.
+* Then click again **Simulate** menu and click **Run** option then select **run -all** option.
