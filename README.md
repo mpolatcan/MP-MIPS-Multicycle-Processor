@@ -103,11 +103,9 @@ MP-Mips can execute instructions below:
 * Then click again **Simulate** menu and click **Run** option then select **run -all** option.
 
 **NOTE**: If you want to change data memory,registers or instructions memory you need to edit these files:
-
           In these files all lines are **2 bits** in **hexadecimal** (**8 bits** in **binary**)
-          
+         
           One register, data cell or instruction cell consists of sequentially **4 rows**.Because register contents,
-          
           memory cells and instruction memory cells consist 32 bit content.
           
           **Proof** --> 4 line x 2 bits in hexadecimal = 4 line x 8 bits in binary = 32 bit memory cell content
