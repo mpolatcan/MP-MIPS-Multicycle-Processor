@@ -102,10 +102,14 @@ MP-Mips can execute instructions below:
 * In pop-up menu find **work** libray and select **mpolatcan_mips_multicycle_testbench** under the **work** library.
 * Then click again **Simulate** menu and click **Run** option then select **run -all** option.
 
-**NOTE**: If you want to change data memory,registers or instructions memory you need to edit these files:...
+**NOTE**: If you want to change data memory,registers or instructions memory you need to edit these files:
+
           In these files all lines are **2 bits** in **hexadecimal** (**8 bits** in **binary**)
+          
           One register, data cell or instruction cell consists of sequentially **4 rows**.Because register contents,
+          
           memory cells and instruction memory cells consist 32 bit content.
+          
           **Proof** --> 4 line x 2 bits in hexadecimal = 4 line x 8 bits in binary = 32 bit memory cell content
           For example register.h file like that:
               1  02
