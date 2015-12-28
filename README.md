@@ -18,7 +18,9 @@ Number of words in data memory: **512 words**
 
 Number of registers: **32 registers**						                       
 
+
 MP-Mips can execute instructions below:
+
 
 ## MP-MIPS INSTRUCTIONS 
 
