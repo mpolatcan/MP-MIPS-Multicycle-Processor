@@ -1,8 +1,8 @@
-MP-MIPS
+#H1 MP-MIPS
 
 MP-Mips is a 32-bit processor which was developed with multicycle design techniques in Verilog-HDL was developed by Mutlu Polatcan.
 
-MP-MIPS Details
+#H3 MP-MIPS Details
 
 Data memory size: 2kb											                                
 Data memory each block size: 1 byte							                     	
@@ -18,15 +18,16 @@ MP-MIPS INSTRUCTIONS
 
 I-Type Instructions:
 
-OPCODE	  NAME	     OPERATION
-001000	  ADDI       $rt <-- $rs + imm32 (signed)
-001001	  ADDIU      $rt <-- $rs + imm32 (unsigned)
-001101	  ORI        $rt <-- $rs | imm32
-001100	  ANDI       $rt <-- $rs & imm32
-001110	  XORI       $rt <-- $rs ^ imm32
-001010	  SLTI       $rt <-- ($rs < imm32) $rt = 1 else $rt = 0 (signed)
-001011	  SLTIU      $rt <-- ($rs < imm32) $rt = 1 else $rt = 0 (unsigned)
-001111	  LUI        $rt <-- imm32 << 16
+| OPCODE	|   NAME	 |                        OPERATION                       |
+|---------|:--------:|:-------------------------------------------------------|
+| 001000	|  ADDI    |   $rt <-- $rs + imm32 (signed)                         |
+| 001001	|  ADDIU   |   $rt <-- $rs + imm32 (unsigned)                       |
+| 001101	|  ORI     |   $rt <-- $rs | imm32                                  |
+| 001100	|  ANDI    |   $rt <-- $rs & imm32                                  |
+| 001110	|  XORI    |   $rt <-- $rs ^ imm32                                  |
+| 001010	|  SLTI    |   $rt <-- ($rs < imm32) $rt = 1 else $rt = 0 (signed)  |
+| 001011	|  SLTIU   |   $rt <-- ($rs < imm32) $rt = 1 else $rt = 0 (unsigned)|
+| 001111	|  LUI     |   $rt <-- imm32 << 16                                  |
 
 Bonus Instructions added:
 010111   SUBI        $rt <- $rs - imm32 (signed)
