@@ -1,16 +1,22 @@
 # MP-MIPS Multicycle Processor
 
-*MP-Mips* is a 32-bit processor which was developed with multicycle design techniques in Verilog-HDL.
+**MP-Mips** is a MIPS architecture-based processor which was developed with multicycle design techniques in Verilog-HDL.
 
 ## MP-MIPS Details
 
-Data memory size: *2kb*											                                
-Data memory each block size: *1 byte*							                     	
-Instruction memory size: *1kb*								                           
-Instruction memory each block size: *1 byte*						                
-Number of instructions in instruction memory: *256 instructions* 
-Number of words in data memory: *512 words*						                 
-Number of registers: *32 registers*								                       
+Data memory size: **2kb*	
+
+Data memory each block size: **1 byte**		
+
+Instruction memory size: **1kb**			
+
+Instruction memory each block size: **1 byte**			
+
+Number of instructions in instruction memory: **256 instructions** 
+
+Number of words in data memory: **512 words**		
+
+Number of registers: **32 registers**						                       
 
 MP-Mips can execute instructions below:
 
