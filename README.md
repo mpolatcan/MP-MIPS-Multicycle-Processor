@@ -4,7 +4,7 @@
 
 ## MP-MIPS Details
 
-Data memory size: **2kb*	
+Data memory size: **2kb**	
 
 Data memory each block size: **1 byte**		
 
@@ -35,7 +35,7 @@ MP-Mips can execute instructions below:
 | 001011	|  SLTIU   |   $rt <-- ($rs < imm32) $rt = 1 else $rt = 0 (unsigned)|
 | 001111	|  LUI     |   $rt <-- imm32 << 16                                  |
 
-Bonus Instructions added to I-Type Instructions:
+*Bonus Instructions added to I-Type Instructions*:
 
 | OPCODE	|   NAME	 |                      OPERATION                         |
 |:-------:|:--------:|:-------------------------------------------------------|
@@ -61,7 +61,7 @@ Bonus Instructions added to I-Type Instructions:
 |   101010		|   SLT 	 |  $rd <-- ($rs < $rt) $rd = 1 else $rd = 0 (signed)     |
 |   101011		|   SLTU   |  $rd <-- ($rs < $rt) $rd = 1 else $rd = 0 (unsigned)   |
 
-Bonus Instructions added:
+*Bonus Instructions added to R-Type Instructions*:
 
 | FUNC. FIELD |	  NAME   |	                      OPERATION                       |
 |:-----------:|:--------:|:-------------------------------------------------------|
